@@ -1,0 +1,42 @@
+{
+  "name": "string-utils-js",
+  "version": "1.0.0",
+  "description": "StringUtils",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha ./test",
+    "test-coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kibertoad/string-utils-js.git"
+  },
+  "homepage": "https://github.com/kibertoad/string-utils-js",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "3.4.1",
+    "nyc": "^10.2.0"
+  },
+  "nyc": {
+    "description": "test coverage",
+    "include": [
+      "src/**"
+    ],
+    "reporter": [
+      "lcov",
+      "teamcity",
+      "text-summary"
+    ],
+    "cache": true,
+    "all": true,
+    "report-dir": "./build/reports/coverage",
+    "check-coverage": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100
+  }
+}
