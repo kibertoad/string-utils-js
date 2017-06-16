@@ -1,14 +1,6 @@
 const _ = require('lodash');
 
 /**
- * Returns original boolean if boolean,
- * true if 'true' (case-insensitive) or '1', false if other string, 0 or
- * null/undefined, throws an error
- * if not a string or boolean.
- * @param {String|Boolean} source
- */
-
-/**
  * @param {*} source
  *
  * Rules for the conversion of source:
