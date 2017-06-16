@@ -19,12 +19,11 @@ function init (isEnabled) {
 - **toBooleanNonStrict(entity [, defaultValue])** - convert entity to boolean.
 
 Conversion rules:
-
-Boolean: returns original value
-String: returns TRUE if 'true' (case-insensitive) or '1', FALSE otherwise;
-Number: returns TRUE if 1, FALSE otherwise;
-Null or undefined: default if default value is provided, FALSE otherwise;
-Object: throw an error.
+* Boolean: returns original value
+* String: returns TRUE if 'true' (case-insensitive) or '1', FALSE otherwise;
+* Number: returns TRUE if 1, FALSE otherwise;
+* Null or undefined: default if default value is provided, FALSE otherwise;
+* Object: throw an error.
 
 ### Tests
 
